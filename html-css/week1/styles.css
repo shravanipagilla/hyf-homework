@@ -1,205 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
 
-  <body>
-    <main>
-      <div class="resume">
-        <div class="resume-left">
-          <div class="resume-profile">
-            <img src="profilepic-dummy.png" alt="profile-pic" />
-          </div>
-          <div class="resume-content">
-            <div class="resume-item resume-info">
-              <div class="title">
-                <h2 class="bold">SHRAVANI PAGILLA</h2>
-                <h4 class="regular">FrontEnd Developer</h4>
-              </div>
-              <ul>
-                <li>
-                  <div>
-                    <img src="Home-icon.jpg" alt="address" />
-                  </div>
-                  <p class="data">
-                    nogetgade 21, <br />
-                    2500,København <br />
-                    Danmark
-                  </p>
-                </li>
-                <li>
-                  <div>
-                    <img src="phone-icon.jpg" alt="Mobile" />
-                  </div>
-                  <a
-                    class="data"
-                    href="https://www.skype.com/en//"
-                    target="_blank"
-                    >+45 87654321</a
-                  >
-                </li>
-                <li>
-                  <div>
-                    <img src="mail-icon.png" alt="e-Mail" />
-                  </div>
-                  <a
-                    class="data"
-                    href="https://mail.google.com/"
-                    target="_blank"
-                    >mymailId@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <div>
-                    <img src="web-icon.png" alt="Websid" />
-                  </div>
-                  <a class="data" href="https://www.myweb.com/" target="_blank"
-                    >www.myweb.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item resume-skills">
-              <div class="title">
-                <h3 class="bold">skill's</h3>
-              </div>
-              <ul>
-                <li>
-                  <div class="skill-name">HTML</div>
-                </li>
-                <li>
-                  <div class="skill-name">CSS</div>
-                </li>
-                <li>
-                  <div class="skill-name">SASS</div>
-                </li>
-                <li>
-                  <div class="skill-name">JS</div>
-                </li>
-                <li>
-                  <div class="skill-name">JQUERY</div>
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item resume-social">
-              <div class="title">
-                <h3 class="bold">Social</h3>
-              </div>
-              <ul>
-                <li>
-                  <div>
-                    <img class="icon" src="facebook-icon.png" alt="Facebook" />
-                  </div>
-                  <div class="data">
-                    <a href="https://facebook.com" target="_blank"
-                      >MyFacebook</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img class="icon" src="twitter-icon.jpg" alt="twitter" />
-                  </div>
-                  <div class="data">
-                    <a href="https://twitter.com" target="_blank">MyTwitter</a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img class="icon" src="github.icon.png" alt="GitHub" />
-                  </div>
-                  <div class="data">
-                    <a href="https://github.com" target="_blank"
-                      >My GItHub account</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img class="icon" src="LinkedIn-icon.jpg" alt="e-Mail" />
-                  </div>
-                  <div class="data">
-                    <a href="https://linkedin.com" target="_blank"
-                      >MyLinkedIn</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="resume-right">
-          <div class="resume-item resume-about">
-            <div class="title">
-              <h3 class="bold">Profile</h3>
-            </div>
-            <p>
-              I am a hard working, honest individual. I am a good timekeeper,
-              always willing to learn new skills. I am friendly, helpful and
-              polite, have a good sense of humour. I am able to work
-              independently in busy environments and also within a team setting.
-            </p>
-          </div>
-          <div class="resume-item resume-work">
-            <div class="title">
-              <h3 class="bold">Work Experience</h3>
-            </div>
-            <ul>
-              <li>
-                <div class="date">2018 - 2020</div>
-                <div class="info">
-                  <p class="semi-bold">Intern frontend developer</p>
-                  <p>I created HTML pages and styling with CSS.</p>
-                </div>
-              </li>
-              <li>
-                <div class="date">2015 - 2017</div>
-                <div class="info">
-                  <p class="semi-bold">Intern frontend developer</p>
-                  <p>I created HTML pages and CSS styling.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="resume-item resume-education">
-            <div class="title">
-              <h3 class="bold">Education</h3>
-            </div>
-            <ul>
-              <li>
-                <div class="date">May,2021- March,2022</div>
-                <div class="info">
-                  <p class="semi-bold">
-                    HackYourFuture(Frontend Developer course)
-                  </p>
-                  <p>Course curriculam, here!!</p>
-                </div>
-              </li>
-              <li>
-                <div class="date">2010 - 2014</div>
-                <div class="info">
-                  <p class="semi-bold">Bachelor of Technology</p>
-                  <p>Education Curriculam here!</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="resume-item resume-hobby">
-            <div class="title">
-              <h3 class="bold">Hobbies</h3>
-            </div>
-            <ul>
-              <li><img src="cycling-icon.jpg" alt="Cycling" /></li>
-              <li><img src="music-icon.jpg" alt="Music" /></li>
-              <li><img src="family-icon.jpeg" alt="familyTime" /></li>
-              <li><img src="Allrounder-icon.png" alt="allrounder" /></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume-left {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.resume .resume-left .resume-profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume-left .resume-profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume-left .resume-content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume-left .bold {
+  color: #fff;
+}
+
+.resume .resume-left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume-item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume-left .resume-item:last-child,
+.resume .resume-right .resume-item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume-left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume-left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume-left ul li img {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .resume-left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume-left .resume-skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume-left .resume-skills ul li .skill-name {
+  width: 25%;
+}
+
+.resume .resume-left .resume-skills ul li .skill-progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume-left .resume-skills ul li .skill-per {
+  width: 15%;
+}
+
+.resume .resume-left .resume-skills ul li .skill-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume-left .resume-social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume-right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume-right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume-right .resume-work ul,
+.resume .resume-right .resume-education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume-right ul li {
+  position: relative;
+}
+
+.resume .resume-right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume-right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume-right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume-right .resume-work ul li:before,
+.resume .resume-right .resume-education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.resume .resume-right .resume-work ul li:after,
+.resume .resume-right .resume-education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.resume .resume-right .resume-hobby ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resume .resume-right .resume-hobby ul li img {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
