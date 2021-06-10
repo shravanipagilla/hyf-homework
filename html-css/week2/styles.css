@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    font-family: sans-serif;
+  }
+
+  h1 h2 h3 h4 {
+    font-weight: bold;
+  }
+
+  header {
+    background-color: #f8f8f8;
+    padding: 50px 100px;
+  }
+
+  header p {
+    padding-top: 5px;
+  }
+
+  .list ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 100px;
+  }
+
+  .list ul li {
+    padding: 30px 30px 30px 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .top-paragraphs {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+  }
+
+  .left-paragraph {
+    font-size: 13px;
+    padding-top: 18px;
+  }
+
+  .right-paragraphs {
+    padding: 0px 5px 0px 80px;
+  }
+
+  .increase-padding {
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 10px 0px 15px 0px;
+    width: 80%;
+  }
+
+  .bottom-paragraphs {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+  }
+
+  .bottom-left-paragraph {
+    font-size: 13px;
+    width: 340px;
+    padding-top: 18px;
+  }
+
+  .logos {
+    padding-left: 60px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 88%;
+  }
+
+  div img {
+    width: 150px;
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 100px;
+    border: 1px solid #8a2be2;
+    background-color: #8a2be2;
+    color: white;
+  }
+
+  footer li {
+    list-style-type: none;
+  }
+
+  .footer-left li {
+    padding-bottom: 5px;
+  }
+
+  .map {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-middle1 p {
+    width: 200px;
+    padding-top: 15px;
+  }
+
+  .footer-middle2 li {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .footer-right li {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .footer-right li:nth-child(3) {
+    padding-left: 10px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 450px) and (min-width: 320px) {
+  header {
+    text-align: left;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  header p {
+    padding-top: 5px;
+  }
+
+  .list ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 10px 0px 10px 50px;
+  }
+
+  .list ul li {
+    padding: 5px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .top-paragraphs {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .left-paragraph {
+    /*font-size: 13px;
+  /*  padding-top: 18px;*/
+    width: 400px;
+  }
+
+  .right-paragraphs {
+    /*  padding: 0px 5px 0px 80px;*/
+    padding-top: 18px;
+    width: auto;
+  }
+
+  .increase-padding {
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 10px 0px 15px 0px;
+    /*padding-top: 18px;*/
+  }
+
+  .bottom-paragraphs {
+    display: flex;
+    padding-top: 18px;
+    width: 400px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .bottom-left-paragraph {
+    width: 400px;
+  }
+
+  .logos {
+    padding-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+
+  div img {
+    width: 80px;
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border: 1px solid #8a2be2;
+    background-color: #8a2be2;
+    color: white;
+    width: 100vh;
+    font-size: 20px;
+  }
+
+  footer li {
+    list-style-type: none;
+  }
+
+  .footer-left li {
+    padding-bottom: 5px;
+  }
+
+  .map {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-middle1 p {
+    width: 300px;
+  }
+
+  .footer-middle1 h3,
+  .footer-middle2 h3,
+  .footer-right h3 {
+    padding-top: 20px;
+  }
+
+  .footer-middle2 li {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .footer-right li {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .footer-right li:nth-child(3) {
+    padding-left: 10px;
+  }
+}
