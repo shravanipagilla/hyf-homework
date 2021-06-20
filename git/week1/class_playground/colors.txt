@@ -2,3 +2,4 @@ greencolor
 pinkcolor
 yellowcolor
 bluecolor
+violet
