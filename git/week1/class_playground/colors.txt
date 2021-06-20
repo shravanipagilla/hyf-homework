@@ -1,0 +1,6 @@
+orange
+greencolor 
+pinkcolor
+yellowcolor
+bluecolor
+violet
