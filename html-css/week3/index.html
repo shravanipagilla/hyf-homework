@@ -53,7 +53,7 @@
                     <label for="streetname">Street address*</label>
                     <input id="streetname" type="text" name="streetname" required>
                     <label for="postcode">Post code*</label>
-                    <input id="postcode" type="text" name="postcode" required minlength="4" maxlength="4" placeholder="0000">
+                    <input id="postcode" type="text" pattern="[0-9]{4}" maxlength="4" name=postcode title="valid post code" required>
                 </div>
                 <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address</p>
                 <div>
@@ -82,7 +82,7 @@
                             <label for="street">Street address*</label>
                             <input id="street" type="text" name="streetname" required>
                             <label for="post_code">Post code*</label>
-                            <input id="post_code" type="text" name="postcode" required minlength="4" maxlength="4">
+                            <input id="post_code" type="text" name="postcode"  pattern="[0-9]{4}" maxlength="4" title="valid post code" required>
                         </div>
 
                     </div>
@@ -95,7 +95,6 @@
                     </div>
                     <!---save and next buttons-->
                     <div class="button">
-                        <button type="submit" value="save">Save</button>
                         <button><a href="form2.html">Next</a></button>
                     </div>
             </fieldset>
