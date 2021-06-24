@@ -3,14 +3,14 @@
 
 <head>
     <title>Billing</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form3.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form3.css" />
 </head>
 
 <body>
     <header>
-        <img src="images/shopping.jpg" alt="Logo" height="120">
+        <img src="images/shopping.jpg" alt="Logo" height="120" />
         <p class="nav">Navigation</p>
     </header>
     <main>
@@ -29,35 +29,55 @@
                 <!--user payment details-->
                 <div>
                     <label for="name">Name on card </label>
-                    <input id="name" type="text">
+                    <input id="name" type="text" />
                 </div>
                 <div>
                     <label for="card">Card type</label>
                     <select id="card">
-                            <option value="master">Master card</option>
-                            <option value="visa">Visa card</option>
-                            <option value="dankort">Dankort</option>
-                         </select>
+              <option value="master">Master card</option>
+              <option value="visa">Visa card</option>
+              <option value="dankort">Dankort</option>
+            </select>
                 </div>
                 <div>
                     <label for="card-no">Credit card number</label>
-                    <input type="text" id="card-no">
+                    <input type="text" id="card-no" required />
                     <label for="fname">First name</label>
-                    <input id="fname" type="text">
+                    <input id="fname" type="text" required />
                 </div>
                 <div class="exp_info">
                     <label for="expmnth">Expiry month</label>
-                    <input id="expmnth" type="text">
+                    <select id="expmnth" name="dropdown" required>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
                     <label for="expyr">Expiry year</label>
-                    <input id="expyr" type="text">
+                    <select name="dropname" id="expyr" required>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+            </select>
                 </div>
                 <div class="cvv">
                     <label for="cvv">CVV</label>
-                    <input id="cvv" type="text">
+                    <input id="cvv" type="text" pattern="[0-9]{3}" maxlength="3" required />
                 </div>
                 <div class="button">
-                    <button type="submit" value="save">Save</button>
-                    <button onclick="alert( 'Thanks for shopping with Us')"><a href="index.html">Home</a></button>
+                    <button>
+              <a href="index.html">Home</a>
+            </button>
                 </div>
             </fieldset>
         </form>
