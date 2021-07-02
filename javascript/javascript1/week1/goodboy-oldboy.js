@@ -1,5 +1,5 @@
 const dogYearOfBirth = 2021;
-let dogYearFuture = 2045;
+const dogYearFuture = 2045;
 let dogYear = dogYearFuture - dogYearOfBirth;
 let dogYearOrHumanYear = "dog";
 let resultOrInDogYear = true;
