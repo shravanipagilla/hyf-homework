@@ -72,7 +72,7 @@
                 </div>
                 <div class="cvv">
                     <label for="cvv">CVV</label>
-                    <input id="cvv" type="text" pattern="[0-9]{3}" maxlength="3" required />
+                    <input id="cvv" type="text" pattern="^[0-9]{3,3}$" maxlength="3" minlength="3" title="Only numbers. Exactly 3 digits." required />
                 </div>
                 <div class="button">
                     <button type="submit">
