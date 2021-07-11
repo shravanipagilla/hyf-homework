@@ -1,13 +1,16 @@
 const class07Students = [];
 
 function addStudentToClass(studentName) {
-    if (studentName == null || studentName === " ")
+
+    if (studentName == null || studentName === " ") {
         console.log("Student name must not be null");
-    else if (class07Students.includes(studentName))
+    } else if (class07Students.includes(studentName)) {
         console.log("Student " + studentName + " is already in the class");
-    else if (class07Students.length < 6 || studentName == "Queen")
+    } else if (class07Students.length < 6 || studentName == "Queen") {
         class07Students.push(studentName);
-    else return console.log("Cannot add more students to class 07");
+    } else {
+        return console.log("Cannot add more students to class 07");
+    }
 
 }
 
