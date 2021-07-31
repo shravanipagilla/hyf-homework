@@ -12,6 +12,4 @@ function notThisFunctionName(travelInformation) {
     console.log(hours);
     var minutes = Math.floor((time - hours) * 60);
     return hours + ' hours and ' + minutes + ' minutes';
-    // console.log(hours + ' hours and ' + minutes + ' minutes');
-    //console.log(`${hours} hours and ${minutes} minutes`)
 }

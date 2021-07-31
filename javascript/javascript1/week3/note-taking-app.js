@@ -13,8 +13,7 @@ function getNote(id) {
     if (id === ' ' || typeof id !== 'number') {
         console.log('Id neither blank nor string');
     } else {
-        return notes.find(content => content.id == id);
-        // const anyAdult = people.some(person => person.age >= 18);
+        return notes.find(note => note.id == id);
 
     }
 }

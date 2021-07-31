@@ -36,7 +36,6 @@ const seriesDurations = [{
     },
 ];
 
-
 function logOutSeriesText() {
     var seriesDurationInHours = [];
     let lifespanInHours = 80 * 365 * 24;
