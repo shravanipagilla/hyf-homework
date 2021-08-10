@@ -5,8 +5,15 @@ function getReply(command) {
 
     //----------My name command-------------
     if (command.includes("Hello my name is")) {
-        personName = command.split(' ').splice(-1);
-        return "Nice to meet you  " + personName;
+        let tempName = command.split(' ').splice(-1);
+
+        if (personName === null || personName.toString() !== tempName.toString()) {
+            personName = tempName;
+            return "Nice to meet you  " + personName;
+        } else if (personName.toString() === tempName.toString()) {
+            return "Hello again " + personName;
+        }
+
     }
 
     //------------- What is my name command--------
@@ -48,7 +55,7 @@ function getReply(command) {
             let lastItem = toDo.pop(); //Last item removed from the toDo array 
             return "You have " + noOfItems + " items-" + toDo + " and " + lastItem;
         }
-        if (toDo.length == 1) {
+        if (toDo.length === 1) {
             return "You have 1 item-" + toDo;
         } else {
             return "Your todo list is empty";
@@ -98,7 +105,6 @@ function getReply(command) {
 
 console.log(getReply("Hello my name is Benjamin"));
 console.log(getReply("Hello my name is Benjamin"));
-
 console.log(getReply("What is my name"));
 console.log(getReply("Add singing in the shower room to my todo"));
 console.log(getReply("Add fishing to my todo"));
