@@ -1,10 +1,9 @@
 function findDanishLetter(danishString) {
-    const dasnishLetters = ['æ', 'ø', 'å'];
 
     danishString = danishString.toLowerCase();
-    var countÅ = danishString.split('å').length - 1;
-    var countØ = danishString.split('ø').length - 1;
-    var countÆ = danishString.split('æ').length - 1;
+    let countÅ = danishString.split('å').length - 1;
+    let countØ = danishString.split('ø').length - 1;
+    let countÆ = danishString.split('æ').length - 1;
     let total = countÆ + countÅ + countØ;
     console.log('Total:' + total + '  Å:' + countÅ + '  Ø:' + countØ + '  Æ:' + countÆ);
 }
