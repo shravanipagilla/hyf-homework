@@ -1,0 +1,52 @@
+<head>
+    <title>HyfBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d627cbcc88.js" crossorigin="anonymous">
+    </script>
+    <!-- kit for using icons-->
+</head>
+
+<body>
+    <header>
+        <nav class=nav_bar>
+            <div class="logo1">
+                <i class="fab fa-amazon"></i>
+            </div>
+
+            <div class="header-middle">
+                <h1 class="h1">hyfBay - Get the okay'est products here </h1>
+            </div>
+
+            <div class="logo2">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <form id="form_tag">
+            <div class="input_div">
+                <input type="text" id="srch_by_product" name="search_product" placeholder="Search for a product">
+                <input type="number" id="srch_by_max_price" name="search_product_by_price" placeholder="Set maximum price">
+                <input type="number" id="srch_by_rating" name="search_product_by_rating" placeholder="Search by rating"><br>
+            </div>
+            <div class="select_div">
+                <label for="product_order">SortBy:</label>
+                <select name="product_order" id="product_order">
+      <option value="a-zName">name->name a - z</option>
+      <option value="z-aName">name->name z - a</option>
+      <option value="highToLowPrice">Price->High to Low price </option>
+      <option value="lowToHighPrice">Price->Low to High price</option>
+      <option value="highToLowRating">Rating->High to Low rating</option>
+      <option value="lowToHighRating">Rating->Low to High rating</option>
+      </select>
+            </div>
+        </form>
+        <ul id="ulList" class="display-list">
+        </ul>
+    </main>
+    <script src="hyfBayHelpers.js"></script>
+    <script src="main.js"></script>
+</body>
