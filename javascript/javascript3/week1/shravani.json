@@ -1,0 +1,23 @@
+[
+    {
+        "song": "Jaamu Raatiri",
+        "Singer" : "Bala subrahmanyam",
+        "movie": "kshana kshanam",
+        "rating":{
+           "good":true,
+           "bad":false
+
+        }
+    },
+    {
+        "song":"leharaye",
+        "singer":"SidSreeRam",
+        "movie": "Most Eligible Bachelor"
+    },
+    {
+        "song":"emaindo",
+        "Singer":"manu",
+        "movie":"balupu"
+
+    }
+]
