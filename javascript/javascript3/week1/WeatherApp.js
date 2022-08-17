@@ -146,10 +146,12 @@ function storageData() {
   let storedData = localStorage.getItem("storedCityName");
   if (storedData) {
     weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${storedData}&appid=a475908923b60eeeafd3fd4ce054d90e`;
-    getWeather();
+    getWeather(weatherUrl);
   }
 }
 
 userButton.addEventListener("click", getCurrentWeatherByCityName);
 locationButton.addEventListener("click", currentPositionWeatherByLocation);
 window.addEventListener("load", storageData);
+
+
