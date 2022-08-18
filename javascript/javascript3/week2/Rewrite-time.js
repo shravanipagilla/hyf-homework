@@ -1,10 +1,5 @@
-//Rewrite setTimeout and navigator.geolocation.getCurrentPosition to promises. 
-//The getCurrentPosition function is probably going to throw an error, but that is fine. 
-//As long as you can use it as a promise
-/*setTimeoutPromise(3000).then(() => {
-    console.log("Called after 3 seconds");
-  });*/
-  function getCurrentLocation(){
+
+function getCurrentLocation(){
       const geolocationPromise = new Promise((resolve,reject) =>{
       navigator.geolocation.getCurrentPosition(
           (position)=>resolve(position), 
