@@ -5,23 +5,30 @@ CREATE DATABASE IF NOT EXISTS hyf_db;
 USE hyf_db;
 
 -- 1.Find out how many tasks are in the task table
-SELECT * 
+SELECT count(*) 
 FROM `hyf_db`.`task`;
 
 -- 2.Find out how many tasks in the task table do not have a valid due date
-SELECT due_date 
+SELECT count(*) 
 FROM `hyf_db`.`task`
 WHERE due_date IS  NULL;
 
 -- 3.Find all the tasks that are marked as done
-SELECT `title`
-FROM `hyf_db`.`task`
-WHERE `task`.`status_id`= '3'
+
+
+SELECT *
+FROM task
+ Join status on task.status_id = status.id
+WHERE status.name = 'Done'
+Order by task.id
 
 -- 4.Find all the tasks that are not marked as done
-SELECT `title`
-FROM `hyf_db`.`task`
-WHERE `task`.`status_id` != '3'
+
+SELECT *
+FROM task
+ Join status on task.status_id = status.id
+WHERE status.name != 'Done'
+Order by task.id
 
 -- 5.Get all the tasks, sorted with the most recently created first
 SELECT *
