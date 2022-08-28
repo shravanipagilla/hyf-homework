@@ -38,17 +38,3 @@ await Promise.all(promise).then(res => {
 getRepoItems();
 
 
-/*function getUser(user) {
-    const api=`https://api.github.com/search/repositories?q=user:${user}`;
-  fetch(api)
-  .then(res=>res.json())
-  .then(data=>
-      {
-          console.log(data);
-          //const divEl=document.getElementById("getdata");
-          //divEl.innerHTML=`User: ${data.username}`;
-      });
-      
-  }
-
-  getUser(shravanipagilla);*/

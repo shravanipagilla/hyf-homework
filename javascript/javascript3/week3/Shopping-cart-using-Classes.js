@@ -46,6 +46,7 @@ class Product {
     const olTag = document.createElement("ol");
     olTag.textContent = "";
     olTag.textContent = 'Shopping Cart has ' + this.products.length + ' products';
+    // @ts-ignore
     cart.appendChild(olTag)
     this.products.forEach(product => {
       const name = document.createElement("li");
@@ -55,6 +56,7 @@ class Product {
   //fot total price of products
   const total = document.createElement('h3');
   total.textContent  = 'Total Price of Items : ' + this.getTotal();
+   // @ts-ignore
   cart.append(total);
     }
   
@@ -66,6 +68,7 @@ class Product {
         {
             console.log(data);
             const user=document.getElementById('user');
+             // @ts-ignore
             user.innerHTML=`User: ${data.name}`;
         });
         
