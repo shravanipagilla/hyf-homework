@@ -29,7 +29,7 @@ CREATE TABLE `Student` (
 
 -- Create Index on Name of Student table
 
-CREATE INDEX name ON Student (name);
+CREATE INDEX idx_name ON Student (name);
 
 -- Add new column status to Class table with enum values
 
