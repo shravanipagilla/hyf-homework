@@ -22,9 +22,7 @@ WHERE id = 2;
 delete from Meal 
 where id = 4;
 
-
-
-                           -- Reservation queries..
+-- Reservation queries..
 -- 1.get all Reservation..
 select * from Reservation;
 
@@ -46,7 +44,7 @@ WHERE id = 2;
 -- 5.Delete a Reservation  with any id, fx 1
 delete  from Reservation where id = 4; 
 
-                               -- Review queries.. 
+-- Review queries.. 
 
 -- 1.Get all reviews
 select * from Review;
@@ -75,12 +73,11 @@ where price < 90;
 -- 2.Get meals that still has available reservations
 SELECT
     Meal.title,
-    Meal.max_reservations, (
-        Meal.max_reservations - sum(Reservation.number_of_guests)
-    ) AS available_reservations
+    Meal.max_reservations, sum(Reservation.number_of_guests) AS booked_spots
 FROM Meal
     JOIN Reservation ON Meal.id = Reservation.meal_id
-GROUP BY Meal.id;
+GROUP BY Reservation.meal_id
+HAVING Meal.max_reservations > booked_spots;
 
 -- 3.Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde
 select * from Meal 
@@ -96,24 +93,18 @@ SELECT *
 FROM Meal LIMIT 5;
 
 -- 6.Get the meals that have good reviews
-SELECT *
+SELECT Meal.*,Review.stars AS stars_recieved
 FROM Meal
 Join Review on Review.meal_id = Meal.id  
-WHERE Review.description = 'good';
+WHERE Review.stars > 3;
 
 -- 7.Get reservations for a specific meal sorted by created_date
-
-/*SELECT Meal.title,Meal.price
-FROM Meal
-INNER JOIN Reservation
-ON Meal.id = Reservation.meal_id
-ORDER BY `Reservation`.`created_date`;*/
 
 SELECT Meal.title,Meal.price
 FROM Meal
     INNER JOIN Reservation ON Reservation.meal_id = Meal.id
-WHERE Meal.title = 'burger'
-ORDER BY `Reservation`.`created_date`;
+WHERE Meal_id = 2
+ORDER BY Reservation.created_date ASC;
 
 -- 8.Sort all meals by average number of stars in the reviews
 
