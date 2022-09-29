@@ -6,7 +6,7 @@ import Todo from "./Todo";
 const TodoRender =  ({todoArray}) =>{
     return (
         <div> 
-           {todoArray.map((todoItem)=>
+         <h1 className="todoheader">Todo List</h1>  {todoArray.map((todoItem)=>
             <Todo key ={todoItem.id}
             id = {todoItem.id}
             description={todoItem.description}

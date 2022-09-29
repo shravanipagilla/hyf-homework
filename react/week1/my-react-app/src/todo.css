@@ -14,3 +14,8 @@
 .time{
     color: rgb(93, 27, 154);
 }
+.todoheader{
+    display: flex;
+    justify-content: center;
+    background: none;
+}
