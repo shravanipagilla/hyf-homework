@@ -1,0 +1,16 @@
+.todoitem{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(166, 166, 181);
+}
+.id{
+
+    color: brown;
+}
+.title{
+    color: rgb(13, 9, 55);
+}
+
+.time{
+    color: rgb(93, 27, 154);
+}
