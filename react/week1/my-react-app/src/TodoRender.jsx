@@ -1,18 +1,17 @@
-
 import React from "react";
- 
-import Todo from "./Todo";
 
-const TodoRender =  ({todoArray}) =>{
-    return (
-        <div> 
-         <h1 className="todoheader">Todo List</h1>  {todoArray.map((todoItem)=>
-            <Todo key ={todoItem.id}
-            id = {todoItem.id}
-            description={todoItem.description}
-            deadlineDate={todoItem.deadlineDate}/>)}
-            
+const TodoRender = ({ todoArray }) => {
+  return (
+    <div>
+      <h1 className="todoheader">Todo List</h1>
+      {todoArray.map((todoItem) => (
+        <div className="todoitem" key={todoItem.id}>
+          <h2 className="id">{todoItem.id}</h2>
+          <h2 className="title">{todoItem.description}</h2>
+          <h2 className="time">{todoItem.deadlineDate}</h2>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 export default TodoRender;
