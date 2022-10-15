@@ -1,7 +1,19 @@
-import React, { useState } from "react";
-// @ts-ignore
+import React from "react";
+import {useState} from 'react'
 
-const AddTodo = ({ onAdd }) => {
+export const TodoItem = ({ id, description, onDelete }) => {
+    const [status, setStatus] = useState(false);
+    return (
+
+        <div className="todo">
+            <input type="checkbox" className="checkbox" value={id} onChange={(e => setStatus(e.target.checked))}></input>
+            <span className={`texts ${status ? "checkedTodo" : ""}`}>{description}</span>
+            <button onClick={() => onDelete(id)}>Delete Todo</button>
+        </div>
+    )
+}
+
+export const AddTodo = ({ onAdd }) => {
     const [value, setValue] = useState("");
     const [visible, setVisible] = useState(false);
 
@@ -21,4 +33,3 @@ const AddTodo = ({ onAdd }) => {
         </div>
     )
 }
-export default AddTodo;
