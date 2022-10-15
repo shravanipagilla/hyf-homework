@@ -38,7 +38,7 @@ function App() {
     if (description) {
       const id = Math.floor(Math.random() * (100 - 4 + 1)) + 4;
       console.log(id)
-      setTodos(todos.concat({
+      setTodos(...todos, {
         id: id,
         description: description
       }
