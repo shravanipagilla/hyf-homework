@@ -8,7 +8,7 @@ import { AddTodo } from "./Components/TodoItems";
 function App() {
   const [todos, setTodos] = useState(arrayOfTodos);
  //adding todo
-  const addTodo = (description) => {
+  const onAdd = (description) => {
     if (description) {
       const id = Math.floor(Math.random() * (100 - 4 + 1)) + 4;
       setTodos(todos.concat({
@@ -29,7 +29,7 @@ function App() {
       { todos.length > 0 ?
         <Todos todoArray={todos} onDelete={deleteTodo} /> : "No items"
         }
-        <AddTodo onAdd={addTodo}/>
+        <AddTodo onAdd={onAdd}/>
     </div>
   );
 }
